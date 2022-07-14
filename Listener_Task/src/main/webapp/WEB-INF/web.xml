@@ -1,0 +1,26 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <context-param>
+        <param-name>log4j-config-location</param-name>
+        <param-value>WEB-INF/log4j.properties</param-value>
+    </context-param>
+     
+  <listener>
+  	<listener-class>listeners.Log4jListener</listener-class>
+  </listener>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>services.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+    <listener-class>listeners.Log4jListener</listener-class>
+</listener>
+</web-app>
